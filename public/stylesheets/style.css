@@ -1,8 +1,48 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+#header {
+  height: 75px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: yellow;
+}
+
+#toc {
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  height: 100%;
+  width: 250px;
+  background-color: red;
+}
+
+#main {
+  position: absolute;
+  top: 75px;
+  left: 250px;
+  right: 670px;
+  height: 100%;
+  width: auto;
+  background-color: pink;
+}
+
+#terminal {
+  top: 75px;
+  right: 0px;
+  position: absolute;
+  width: 650px;
+  padding: 10px;
 }
