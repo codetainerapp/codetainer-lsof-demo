@@ -24,6 +24,11 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+// app.use(session({
+    // store: new RedisStore(options),
+    // secret: 'rando private secret',
+// }));
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());

@@ -6,7 +6,9 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "connect-redis": "^2.5.0",
+    "ejs": "*",
     "express": "3.3.4",
-    "ejs": "*"
+    "request": "^2.62.0"
   }
 }
