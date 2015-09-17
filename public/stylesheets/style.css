@@ -1,27 +1,67 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px Lato, Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
 
+.
+
 h1 {
   vertical-align: middle;
   margin-left: 10px;
 }
 
-#header {
-  height: 75px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
+ol.secondary {
+  /* list-style-type: lower-alpha; */
+  padding-left: 20px;
 }
 
+.toc-section h2 {
+  margin: 0px;
+}
+
+.selected-lesson {
+  font-weight: bold;
+}
+
+.unselected-lesson {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.visible-lesson {
+  display: block;
+}
+
+.hidden-lesson {
+  display: none;
+}
+
+.run-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 85px;
+}
+
+.codewrapper {
+  display: block;
+  position: relative;
+}
+
+.internal {
+  padding: 10px;
+}
+#title {
+  font-size: 2em;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 #toc {
   position: absolute;
-  top: 75px;
+  top: 0px;
   left: 0px;
   height: 100%;
   width: 250px;
@@ -29,7 +69,7 @@ h1 {
 
 #main {
   position: absolute;
-  top: 75px;
+  top: 0px;
   left: 250px;
   right: 670px;
   height: 100%;
@@ -37,9 +77,20 @@ h1 {
 }
 
 #terminal {
-  top: 75px;
-  right: 0px;
   position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
   width: 650px;
   padding: 10px;
+}
+
+.codeblock {
+  border-style: solid;
+  border-width: thin thin thin 15px;
+  border-color: #cccccc;
+  font-family: "Monaco",sans-serif;
+  padding: 1.0em;
+  background: #fafafa;
+  font-size: 1.0rem;
 }

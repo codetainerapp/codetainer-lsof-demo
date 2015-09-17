@@ -5,11 +5,11 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , user = require('./routes/user')
   , http = require('http')
   , path = require('path');
 
 var app = express();
+var session = require('express-session');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -20,14 +20,18 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(express.cookieParser('rando secret'));
-app.use(express.session());
+// app.use(express.session());
+//
+var RedisStore = require('connect-redis')(session);
+
+app.use(session({
+    store: new RedisStore(),
+    secret: 'rando private secret',
+}));
+
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use(session({
-    // store: new RedisStore(options),
-    // secret: 'rando private secret',
-// }));
 
 // development only
 if ('development' == app.get('env')) {
@@ -35,7 +39,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.post('/send', routes.send);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
