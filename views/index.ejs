@@ -54,6 +54,19 @@
 
       <div class="lesson-body" data-id="2">
         <div class="lesson-desc">
+
+          <p>
+          lsof isn't just good for files, it can also show you open network connections.
+          </p> 
+
+          <p> 
+          Running lsof with the <strong>-i</strong> flag will show all network connections.
+          </p>
+
+          <p> 
+          Try typing the command below into the terminal on the right!
+          </p>
+
           <div class="codewrapper">
             <pre class="codeblock">lsof -i</pre>
             <div class="run-button">
@@ -63,6 +76,8 @@
               <button class="clear">Clear</button>
             </div>
           </div>
+
+          <p>You should see the `nc` program running and listening on the `http-alt` port.</p>
 
           <button class="next button">Next</button>
         </div>
