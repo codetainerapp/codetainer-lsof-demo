@@ -6,8 +6,6 @@ a {
   color: #00B7FF;
 }
 
-.
-
 h1 {
   vertical-align: middle;
   margin-left: 10px;
@@ -33,6 +31,7 @@ ol.secondary {
 
 .visible-lesson {
   display: block;
+  padding: 10px;
 }
 
 .hidden-lesson {
@@ -51,7 +50,7 @@ ol.secondary {
   position: relative;
 }
 
-.internal {
+#toc .internal {
   padding: 10px;
 }
 #title {
@@ -65,6 +64,8 @@ ol.secondary {
   left: 0px;
   height: 100%;
   width: 250px;
+  background-color: #fbfbfb;
+  border: 1px solid #ddd;
 }
 
 #main {
@@ -73,17 +74,19 @@ ol.secondary {
   left: 250px;
   right: 670px;
   height: 100%;
+  padding: 20px;
   width: auto;
 }
 
 #terminal {
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 5px;
   height: 100%;
   width: 650px;
   padding: 10px;
 }
+
 
 .codeblock {
   border-style: solid;
@@ -93,4 +96,33 @@ ol.secondary {
   padding: 1.0em;
   background: #fafafa;
   font-size: 1.0rem;
+}
+
+.button {
+    outline: 0;
+    color: #6e6e6e;
+    font: 700 12px Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    padding: 7px 12px;
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 1px 0 #fff;
+    -webkit-transition: border-color .218s;
+    -moz-transition: border .218s;
+    -o-transition: border-color .218s;
+    transition: border-color .218s;
+    background: #f3f3f3;
+    background: -webkit-gradient(linear,0 40%,0 70%,from(#F5F5F5),to(#F1F1F1));
+    background: -moz-linear-gradient(linear,0 40%,0 70%,from(#F5F5F5),to(#F1F1F1));
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

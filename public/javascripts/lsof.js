@@ -1,10 +1,11 @@
-(function() {
+$(function() {
+
   $('#terminal').codetainer({
      terminalOnly: true,
      url: "http://127.0.0.1:3000",
      container: "word",
      width: "100%",
-     height: "100%"
+     height: "100%",
   });
 
   function sendToCodetainer(command, cb) {
@@ -102,6 +103,7 @@
      });
   });
 
-  console.log("XXXXX")
   selectLesson(1);
+    console.log("WTF ")
+
 });
