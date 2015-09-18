@@ -26,7 +26,7 @@
           <h2>Networking</h2>
          <ol class="secondary">
            <li data-id="2">Show all connections</li>
-           <li data-id="3">Show programs running on port X</li>
+           <li data-id="3">Show programs connecting to port X</li>
          </ol>
         </div>
 
@@ -77,7 +77,8 @@
             </div>
           </div>
 
-          <p>You should see the `nc` program running and listening on the `http-alt` port.</p>
+          <p>In the output, you should see the `nc` program running and listening on the `http-alt` port, and `webserver` app
+          running on port 8001.</p>
 
           <button class="next button">Next</button>
         </div>
@@ -87,6 +88,7 @@
      <div class="lesson-body" data-id="3">
         <div class="lesson-desc">
 
+          <p>You can also filter lsof output by port.</p>
           <p> 
           Try typing the command below into the terminal on the right!
           </p>
@@ -100,6 +102,8 @@
               <button class="clear">Clear</button>
             </div>
           </div>
+
+          <p>In the output, you should see the `nc` program running and listening on the `http-alt` port (8080) only.</p>
 
           <button class="next button">Next</button>
         </div>

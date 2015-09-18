@@ -1,5 +1,5 @@
 body {
-  font: 14px Lato, Helvetica, Arial, sans-serif;
+  font: 1.3em Lato, Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -51,7 +51,7 @@ ol.secondary {
 }
 
 #toc .internal {
-  padding: 10px;
+  padding: 15px;
 }
 #title {
   font-size: 2em;
@@ -62,6 +62,7 @@ ol.secondary {
   position: absolute;
   top: 0px;
   left: 0px;
+  padding-left: 5px;
   height: 100%;
   width: 250px;
   background-color: #fbfbfb;
@@ -71,11 +72,11 @@ ol.secondary {
 #main {
   position: absolute;
   top: 0px;
-  left: 250px;
-  right: 670px;
+  left: 255px;
+  right: 650px;
   height: 100%;
   padding: 20px;
-  width: auto;
+  width: auto.2;
 }
 
 #terminal {
@@ -83,7 +84,7 @@ ol.secondary {
   top: 0px;
   right: 5px;
   height: 100%;
-  width: 650px;
+  width: 630px;
   padding: 10px;
 }
 
